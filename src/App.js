@@ -10,7 +10,12 @@ import { OrderDetails } from './pages/OrderDetails';
 import { DraftOrderList } from './pages/DraftOrderList';
 import { OrderList } from './pages/OrderList';
 import { SupplierProductList } from './pages/SupplierProductList';
+import { SupplierSideProductList } from './pages/SupplierSideProductList';
 import Layout from './components/Layout';
+import { SupplierOrderList } from './pages/SupplierOrderList';
+import { AddMaterials } from './pages/AddMaterials';
+import { UpdateMaterials } from './pages/UpdateMaterials';
+import { PlacedRejectOrder } from './pages/PlacedRejectOrder';
 
 
 function App() {
@@ -27,6 +32,13 @@ function App() {
             <Route path='/draftorderlist' exact element={<DraftOrderList />} />
             <Route path='/orderlist' exact element={<OrderList />} />
             <Route path='/supplierproductlist' exact element={<SupplierProductList />} />
+
+
+            <Route path='/suppliersideproductlist' exact element={<SupplierSideProductList />} />
+            <Route path='/supplierorderlist' exact element={<SupplierOrderList />} />
+            <Route path='/addmaterial' exact element={<AddMaterials />} />
+            <Route path='/updatematerial' exact element={<UpdateMaterials />} />
+            <Route path='/placedrejectorder' exact element={<PlacedRejectOrder />} />
 
           </Routes>
         </Layout>

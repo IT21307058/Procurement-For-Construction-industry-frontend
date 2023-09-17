@@ -136,6 +136,26 @@ const Navbar = () => {
                   Supplier Product
                 </Link>
               </li>
+
+              <li className="nav-item">
+                <Link to="/suppliersideproductlist" role="button" className="nav-link">
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    style={{ marginRight: "10px", color: "white" }}
+                  />
+                  Supplier Side Product
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/supplierorderlist" role="button" className="nav-link">
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    style={{ marginRight: "10px", color: "white" }}
+                  />
+                  Supplier Order
+                </Link>
+              </li>
               
               <li
                 className="nav-item"
