@@ -3,19 +3,18 @@ import { NavLink } from 'react-router-dom'
 import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card';
 
-
-export const PlacedRejectOrder = () => {
+export const AddSite = () => {
     return (
         <div className="container">
             <div className='d-flex'>
-                <h2>Placed or Reject Order</h2>
+                <h2>Create Site Details</h2>
             </div>
             <Card className='shadow card'>
                 <Form className='mt-4'>
                     <div className="row">
 
                         <Form.Group className="mb-3 " controlId="formBasicEmail">
-                            <Form.Label>Order No</Form.Label>
+                            <Form.Label>Site ID</Form.Label>
                             <Form.Control type="text" value="" onChange="" name="driverName" />
                         </Form.Group>
 
@@ -25,51 +24,32 @@ export const PlacedRejectOrder = () => {
                         </Form.Group>
 
                         <Form.Group className="mb-3 " controlId="formBasicEmail">
-                            <Form.Label>Placed Date</Form.Label>
-                            <Form.Control type="date" value="" onChange="" name="driverName" />
-                        </Form.Group>
-
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Require Date</Form.Label>
-                            <Form.Control type="date" value="" onChange="" name="noOfMiles" />
-                        </Form.Group>
-
-                        <Form.Group className="mb-3 " controlId="formBasicEmail">
-                            <Form.Label>Product Name</Form.Label>
+                            <Form.Label>Site Address</Form.Label>
                             <Form.Control type="text" value="" onChange="" name="driverName" />
                         </Form.Group>
 
                         <Form.Group className="mb-3 " controlId="formBasicEmail">
-                            <Form.Label>Product Quantity</Form.Label>
+                            <Form.Label>Site Contact Number</Form.Label>
                             <Form.Control type="text" value="" onChange="" name="driverName" />
                         </Form.Group>
 
+
                         <Form.Group className="mb-3 " controlId="formBasicEmail">
-                            <Form.Label>Total Cost</Form.Label>
+                            <Form.Label>Budget</Form.Label>
                             <Form.Control type="text" value="" onChange="" name="driverName" />
                         </Form.Group>
 
                         <Form.Group className="mb-3">
-                            <Form.Label><b>Status</b></Form.Label>
+                            <Form.Label><b>Site Manager</b></Form.Label>
                             <select value="" onChange="" name="supplier" className="form-select">
                                 <option>Select </option>
 
                             </select>
                         </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Delivery Date</Form.Label>
-                            <Form.Control type="date" value="" onChange="" name="noOfMiles" />
-                        </Form.Group>
-
-                        <Form.Group className="mb-3 " controlId="formBasicEmail">
-                            <Form.Label>Supplier Comment</Form.Label>
-                            <Form.Control type="text" value="" onChange="" name="driverName" />
-                        </Form.Group>
-
                     </div>
 
-                    <button type="submit" onClick="" class="btn-style">Submit</button>
+                    <button type="submit" onClick="" class="btn-style">Update</button>
                 </Form>
             </Card>
         </div>

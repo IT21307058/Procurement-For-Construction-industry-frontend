@@ -156,6 +156,46 @@ const Navbar = () => {
                   Supplier Order
                 </Link>
               </li>
+
+              <li className="nav-item">
+                <Link to="/orderlistviewstaff" role="button" className="nav-link">
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    style={{ marginRight: "10px", color: "white" }}
+                  />
+                  Order List Staff
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/siteliststaff" role="button" className="nav-link">
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    style={{ marginRight: "10px", color: "white" }}
+                  />
+                  Site
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/invoicelist" role="button" className="nav-link">
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    style={{ marginRight: "10px", color: "white" }}
+                  />
+                  Invoice
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/reciptlist" role="button" className="nav-link">
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    style={{ marginRight: "10px", color: "white" }}
+                  />
+                  Receipt
+                </Link>
+              </li>
               
               <li
                 className="nav-item"

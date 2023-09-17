@@ -16,6 +16,14 @@ import { SupplierOrderList } from './pages/SupplierOrderList';
 import { AddMaterials } from './pages/AddMaterials';
 import { UpdateMaterials } from './pages/UpdateMaterials';
 import { PlacedRejectOrder } from './pages/PlacedRejectOrder';
+import { OrderListViewStaff } from './pages/OrderListViewStaff';
+import { ApproveOrderStaff } from './pages/ApproveOrderStaff';
+import { SiteListStaff } from './pages/SiteListStaff';
+import { AddSite } from './pages/AddSite';
+import { ReceiptList } from './pages/ReceiptList';
+import { AddReceipt } from './pages/AddReceipt';
+import { InvoiceList } from './pages/InvoiceList';
+import { AddInvoice } from './pages/AddInvoice';
 
 
 function App() {
@@ -25,6 +33,7 @@ function App() {
         <Header />
         <Layout>
           <Routes>
+            {/* Site Manager UI */}
             <Route path='/' exact element={<CreateDraftOrder />} />
             <Route path='/addproduct' exact element={<AddProduct />} />
             <Route path='/approveorder' exact element={<ApproveOrder />} />
@@ -33,12 +42,23 @@ function App() {
             <Route path='/orderlist' exact element={<OrderList />} />
             <Route path='/supplierproductlist' exact element={<SupplierProductList />} />
 
-
+             {/* Supplier UI */}
             <Route path='/suppliersideproductlist' exact element={<SupplierSideProductList />} />
             <Route path='/supplierorderlist' exact element={<SupplierOrderList />} />
             <Route path='/addmaterial' exact element={<AddMaterials />} />
             <Route path='/updatematerial' exact element={<UpdateMaterials />} />
             <Route path='/placedrejectorder' exact element={<PlacedRejectOrder />} />
+
+            {/* Staff UI */}
+            <Route path='/orderlistviewstaff' exact element={<OrderListViewStaff />} />
+            <Route path='/approveorderstaff' exact element={<ApproveOrderStaff />} />
+            <Route path='/siteliststaff' exact element={<SiteListStaff />} />
+            <Route path='/addsite' exact element={<AddSite />} />
+            <Route path='/updatestaff' exact element={<ApproveOrderStaff />} />
+            <Route path='/reciptlist' exact element={<ReceiptList />} />
+            <Route path='/addrecipt' exact element={<AddReceipt />} />
+            <Route path='/invoicelist' exact element={<InvoiceList />} />
+            <Route path='/addinvoice' exact element={<AddInvoice />} />
 
           </Routes>
         </Layout>
